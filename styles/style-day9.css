@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    width: 100wh;
+    height: 150vh;
+    padding: 30px 0px 0px 30px;
+    background-color: black;
+    color: white;
+  }
+  .big-container {
+    border: 3px solid turquoise;
+    width: 400px;
+    height: 900px;
+    padding: 20px;
+  }
+  
+  /*** header ****/
+  header {
+    height: 10%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+  }
+  .header__column {
+    margin: 10px;
+  }
+  .header__column h1 {
+    font-size: 30px;
+  }
+  
+  /*** album ****/
+  .album {
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .album__column {
+    margin: 10px;
+  }
+  .album__photo {
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .album__title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .album__artist{
+    font-size: 20px;
+  }
+  
+  /*** button ****/
+  .buttons { 
+    height: 14%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .buttons__button {
+    width: 60px; 
+    height: 60px;
+    border: 2px solid white;
+    border-width: 2px 2px 6px 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 10px;
+  }
+  .buttons__button.play {
+    width: 180px; 
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons__button.play i {
+    margin-right: 15px;
+  }
+  
+  /*** song-list ****/
+  .songs {
+    height: 50%;
+    padding-top: 20px;
+  }
+  .songs__song {
+    display: flex; 
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin-bottom: 30px;
+  }
+  .songs__song-column {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .songs__song-photo {
+    width: 60px; 
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #F2EC4D;
+  }
+  .songs__song__title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .songs__song__artist {
+    font-size: 20px;
+    color:lightgray;
+  }
+  
+  ul > li:nth-child(2) .songs__song-photo {
+    background-color: #28416F;
+  }
+  ul > li:nth-child(3) .songs__song-photo {
+    background-color: #E23A25;
+  }
+  ul > li:nth-child(4) .songs__song-photo {
+    background-color: #6A7585;
+  }
+  
