@@ -1,0 +1,207 @@
+/* Variable */
+:root {
+    --yellow: #FECD30; 
+    --yellow-thick: #FFCE32;
+    --section-title__size: 24px;
+    --article-title__size: 20px;
+    --article-body__size: 16px;
+    --book-img-radius: 10px;
+  }
+  /* common rule */
+  .fa-star, .fa-star-half-alt {
+    color: var(--yellow);
+    margin: -2px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+    width: 375px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* header */
+  .header {
+    width: 100%;
+    height: 100px; 
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  .header__column {
+    color: rgba(0,0,0,0.7);
+  }
+  .header__column h1 {
+    font-weight: 600;
+    font-size: var(--article-title__size);
+  }
+  .search-bar {
+    background-color: white;
+    width: 320px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); /* 어휴,.. */
+  }
+  .search-bar__column:first-child {
+    width: 90%;
+  }
+  .search-bar__column:first-child input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: none;
+  }
+  .search-bar__column:first-child input::placeholder {
+    color: rgba(0,0,0,0.3);
+  }
+  .search-bar__column:nth-child(2) {
+    width: 10%;
+  }
+  .search-bar__column:nth-child(2) button {
+    width: 50px;
+    height: 50px;
+    color: rgba(0,0,0,0.3);
+    border: none;
+    background-color: transparent;
+  }
+  
+  /* main */
+  /* main common rule */
+  main {
+    width: 90%;
+  }
+  section {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section-title {
+    font-size: var(--section-title__size);
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  article {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* book of the day */
+  .book-of-the-day__column {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .book-of-the-day__column:first-child {
+    width: 40%;
+    margin-right: 20px;
+  }
+  .book-of-the-day__cover img {
+    width: 130px;
+    border-radius: var(--book-img-radius);
+  }
+  .book-of-the-day__information {
+    height: 45%
+  }
+  .book-of-the-day__information h3 {
+    font-size: var(--article-body__size);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .book-of-the-day__information h4 {
+    font-size: 14px;
+    color: rgba(0,0,0,0.4);
+    margin-bottom: 10px;
+  }
+  .book-of-the-day__tags {
+    height: 25%;
+  }
+  .book-of-the-day__tag {
+    background-color: #F7F7F7;
+    padding: 5px; 
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  .book-of-the-day__shopping {
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .book-of-the-day__bookmark {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 36px; 
+    height: 36px;
+    background-color: var(--yellow-thick);
+    border-radius: 50%
+  }
+  .book-of-the-day__buy {
+    background-color: black;
+    width: 105px;
+    height: 36px;
+    color: white;
+    font-size: 14px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* top adventures */
+  .top-adventures__article {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .top-adventures__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .top-adventures img {
+    width: 80px;
+    height: 120px;
+    border-radius: var(--book-img-radius);
+  }
+  .top-adventures__rate {
+    margin-top: 8px;
+  }
+  
+  /* popular author */
+  .popular-authors__column {
+    width: 55%;
+  }
+  .popular-authors__column:first-child {
+    width: 45%;
+  }
+  .popular-authors img {
+    width: 120px;
+    border-radius: var(--book-img-radius);
+  }
+  .popular-authors__title {
+    font-size: var(--article-title__size);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .popular-authors__body {
+    font-size: var(--article-body__size);
+    line-height: 1.5em;
+    color: rgba(0,0,0,0.5)
+  }
